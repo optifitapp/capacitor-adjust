@@ -1,0 +1,68 @@
+{
+  "name": "@joinflux/capacitor-adjust",
+  "version": "6.0.0",
+  "description": "Capacitor plugin for Adjust MMP",
+  "main": "dist/plugin.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "lint": "npm run prettier -- --check && npm run swiftlint -- lint",
+    "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
+    "swiftlint": "node-swiftlint",
+    "build": "npm run clean && tsc && rollup -c rollup.config.js",
+    "clean": "rimraf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Blake Ward",
+  "license": "MIT",
+  "devDependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
+    "@ionic/prettier-config": "^1.0.0",
+    "@ionic/swiftlint-config": "^1.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-java": "^0.8.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^2.21.0",
+    "swiftlint": "^1.0.1",
+    "typescript": "~3.8.3"
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^3.0.0"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "JoinfluxCapacitoradjust.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native",
+    "adjust"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "prettier": "@ionic/prettier-config",
+  "swiftlint": "@ionic/swiftlint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joinflux/capacitor-adjust"
+  },
+  "bugs": {
+    "url": "https://github.com/joinflux/capacitor-adjust/issues"
+  },
+  "dependencies": {
+    "@adjustcom/adjust-web-sdk": "^5.1.1"
+  }
+}

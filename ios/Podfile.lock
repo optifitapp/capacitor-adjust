@@ -1,0 +1,31 @@
+PODS:
+  - Adjust (4.29.1):
+    - Adjust/Core (= 4.29.1)
+  - Adjust/Core (4.29.1)
+  - Capacitor (3.1.2):
+    - CapacitorCordova
+  - CapacitorCordova (3.1.2)
+
+DEPENDENCIES:
+  - Adjust (~> 4.29.0)
+  - "Capacitor (from `../node_modules/@capacitor/ios`)"
+  - "CapacitorCordova (from `../node_modules/@capacitor/ios`)"
+
+SPEC REPOS:
+  trunk:
+    - Adjust
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../node_modules/@capacitor/ios"
+  CapacitorCordova:
+    :path: "../node_modules/@capacitor/ios"
+
+SPEC CHECKSUMS:
+  Adjust: 5caa50e140484d30cce45085ea261144f123391c
+  Capacitor: 9d06cf7a97c4752037907979baade2f79f2800fa
+  CapacitorCordova: b8e7144f5dad047965035dbed9c9855b1f0f64e8
+
+PODFILE CHECKSUM: da3459d17cf76256c2e3b857080fc55751d49500
+
+COCOAPODS: 1.10.1
