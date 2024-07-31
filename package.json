@@ -1,5 +1,5 @@
 {
-  "name": "@joinflux/capacitor-adjust",
+  "name": "capacitor-adjust",
   "version": "6.0.0",
   "description": "Capacitor plugin for Adjust MMP",
   "main": "dist/plugin.js",
@@ -37,7 +37,7 @@
     "dist/",
     "ios/",
     "android/",
-    "JoinfluxCapacitoradjust.podspec"
+    "CapacitorAdjust.podspec"
   ],
   "keywords": [
     "capacitor",
@@ -57,10 +57,10 @@
   "swiftlint": "@ionic/swiftlint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joinflux/capacitor-adjust"
+    "url": "https://github.com/optifitapp/capacitor-adjust"
   },
   "bugs": {
-    "url": "https://github.com/joinflux/capacitor-adjust/issues"
+    "url": "https://github.com/optifitapp/capacitor-adjust/issues"
   },
   "dependencies": {
     "@adjustcom/adjust-web-sdk": "^5.1.1"
